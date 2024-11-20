@@ -40,20 +40,26 @@ To run this project, you need to install the necessary dependencies. You can ins
 2. Intsall dependencies:
    `pip install -r requirements.txt`
 
+---
+
 ## Usage
 
 To train the Q-learning agent, simply run the following command:
 `python q_learning_agent.py`
 This will begin training the agent, and the game will be rendered every 100 episodes. The agent will improve its performance over time as it learns through trial and error.
 
+---
+
 ## Q-table Explanation
 
 The Q-table stores the state-action values that represent the agent’s knowledge about the environment. Each entry in the Q-table corresponds to a state-action pair, with the associated Q-value indicating the expected reward of taking that action in that state.
 
-- *State:* A combination of the snake's position, the relative location of food, and any imminent dangers (like walls or the snake’s body).
-- *Action:* The action taken by the agent (moving up, down, left, or right).
-- *Q-value:* A measure of the expected long-term reward for taking an action in a given state.
+- **State:** A combination of the snake's position, the relative location of food, and any imminent dangers (like walls or the snake’s body).
+- **Action:** The action taken by the agent (moving up, down, left, or right).
+- **Q-value:** A measure of the expected long-term reward for taking an action in a given state.
 The Q-values are updated using the Bellman equation after each action.
+
+---
 
 ## Game Execution
 
